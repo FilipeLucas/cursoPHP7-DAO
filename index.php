@@ -48,12 +48,20 @@ $aluno->insert();
 echo $aluno;
 ==========================================================
 */
-
+/*Alterar dados de um usuário ou item da tabela
 $usuario = new Usuario();
 
 $usuario->loadById(6);
 
 $usuario->update("Professor", "professor123");
+
+echo $usuario;
+*/
+$usuario = new Usuario();
+
+$usuario->loadById(4);
+
+$usuario->delete();
 
 echo $usuario;
 
