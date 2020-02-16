@@ -38,5 +38,23 @@ $usuario = new Usuario();
 $usuario->login("josé", "123548");
 
 echo $usuario;
+==========================================================
 */
+/*Criando um novo usuário
+$aluno = new Usuario("aluno", "@aluno");
+
+$aluno->insert();
+
+echo $aluno;
+==========================================================
+*/
+
+$usuario = new Usuario();
+
+$usuario->loadById(6);
+
+$usuario->update("Professor", "professor123");
+
+echo $usuario;
+
 ?>
